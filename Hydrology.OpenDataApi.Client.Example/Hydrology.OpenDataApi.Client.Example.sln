@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hydrology.OpenDataApi.Clien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hydrology.OpenDataApi.Model", "Hydrology.OpenDataApi.Model\Hydrology.OpenDataApi.Model.csproj", "{887C0224-9476-4975-A375-066DE535E14A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Offline Help Documents", "Offline Help Documents", "{4F423121-FC3C-44EE-B55E-2306D0280ED9}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\Sandcastle Projects\Help\Hydrology OpenDataApi Help.chm = ..\..\..\..\Documents\Sandcastle Projects\Help\Hydrology OpenDataApi Help.chm
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

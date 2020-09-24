@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hydrology.OpenDataApi.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Hydrology.OpenDataApi.Model.BasinInfo">
+            <summary>
+            水系資訊
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.BasinInfo.Code">
+            <summary>
+            代碼
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.BasinInfo.Name">
+            <summary>
+            名稱
+            </summary>
+        </member>
+        <member name="T:Hydrology.OpenDataApi.Model.CountyInfo">
+            <summary>
+            縣市資訊
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.CountyInfo.countyCode">
+            <summary>
+            縣市代碼
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.CountyInfo.countyName">
+            <summary>
+            縣市名稱
+            </summary>
+        </member>
+        <member name="T:Hydrology.OpenDataApi.Model.HydroStationInfo.HydroStationTypes">
+            <summary>
+            水情監測站型態
+            </summary>
+        </member>
+        <member name="F:Hydrology.OpenDataApi.Model.HydroStationInfo.HydroStationTypes.Uswg">
+            <summary>
+            都市淹水感知站
+            </summary>
+        </member>
+        <member name="F:Hydrology.OpenDataApi.Model.HydroStationInfo.HydroStationTypes.River">
+            <summary>
+            河川水位站
+            </summary>
+        </member>
+        <member name="F:Hydrology.OpenDataApi.Model.HydroStationInfo.HydroStationTypes.Precipitation">
+            <summary>
+            雨量站
+            </summary>
+        </member>
+        <member name="F:Hydrology.OpenDataApi.Model.HydroStationInfo.HydroStationTypes.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.IoWStationId">
+            <summary>
+            水資源物聯網監測站Id
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.StationId">
+            <summary>
+            監測站Id，業管單位依照實際需求所給定之編號
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.Name">
+            <summary>
+            名稱
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.CountyCode">
+            <summary>
+            縣市代碼
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.CountyName">
+            <summary>
+            縣市名稱
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.TownCode">
+            <summary>
+            鄉鎮代碼
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.TownName">
+            <summary>
+            鄉鎮名稱
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.Latitude">
+            <summary>
+            緯度(WGS84)
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.Longtiude">
+            <summary>
+            經度(WGS84)
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.AdminName">
+            <summary>
+            業管單位名稱
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.StationType">
+            <summary>
+            監測站種類
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.HydroStationInfo.Measurements">
+            <summary>
+            測量值
+            </summary>
+        </member>
+        <member name="T:Hydrology.OpenDataApi.Model.RiverStationInfo">
+            <summary>
+            河川監測站資訊
+            </summary>
+        </member>
+        <member name="M:Hydrology.OpenDataApi.Model.RiverStationInfo.#ctor">
+            <summary>
+            河川、區排水位資訊
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.RiverStationInfo.BasinCode">
+            <summary>
+            水系代碼
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.RiverStationInfo.BasinName">
+            <summary>
+            水系名稱
+            </summary>
+        </member>
+        <member name="T:Hydrology.OpenDataApi.Model.UswgStationInfo">
+            <summary>
+            都市淹水感知站資訊
+            </summary>
+        </member>
+        <member name="M:Hydrology.OpenDataApi.Model.UswgStationInfo.#ctor">
+            <summary>
+            都市淹水感知器站資訊
+            </summary>
+        </member>
+        <member name="T:Hydrology.OpenDataApi.Model.PrecipitationStationInfo">
+            <summary>
+            雨量站資訊
+            </summary>
+        </member>
+        <member name="M:Hydrology.OpenDataApi.Model.PrecipitationStationInfo.#ctor">
+            <summary>
+            雨量站資訊
+            </summary>
+        </member>
+        <member name="T:Hydrology.OpenDataApi.Model.Measurement">
+            <summary>
+            監測物理量
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.Measurement.IoWPhysicalQuantityId">
+            <summary>
+            IoW對應物理量 Id
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.Measurement.TimeStamp">
+            <summary>
+            監測資料時間
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.Measurement.Name">
+            <summary>
+            監測物理量名稱
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.Measurement.SIUnit">
+            <summary>
+            國際標準單位(SI)
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.Measurement.Value">
+            <summary>
+            數值
+            </summary>
+        </member>
+        <member name="T:Hydrology.OpenDataApi.Model.TownInfo">
+            <summary>
+            鄉鎮資訊
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.TownInfo.countyCode">
+            <summary>
+            所屬縣市代碼
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.TownInfo.countyName">
+            <summary>
+            所屬縣市名稱
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.TownInfo.townCode">
+            <summary>
+            鄉鎮代碼
+            </summary>
+        </member>
+        <member name="P:Hydrology.OpenDataApi.Model.TownInfo.townName">
+            <summary>
+            鄉鎮名稱
+            </summary>
+        </member>
+    </members>
+</doc>
