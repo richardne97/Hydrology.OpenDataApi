@@ -8,7 +8,7 @@ namespace Hydrology.OpenDataApi.Model
     {
         public static string GetResponseJsonFileName(FileContentTypes fileType)
         {
-            return $"{fileType.ToString()}.json";
+            return $"{fileType}.json";
         }
 
         public enum FileContentTypes

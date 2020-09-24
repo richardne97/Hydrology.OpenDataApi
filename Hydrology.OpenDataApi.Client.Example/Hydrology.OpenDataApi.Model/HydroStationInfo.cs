@@ -12,7 +12,28 @@ namespace Hydrology.OpenDataApi.Model
         [JsonIgnore()]
         protected HydroStationTypes _stationType;
 
-        public enum HydroStationTypes { Uswg, River, Precipitation, Other };
+        /// <summary>
+        /// 水情監測站型態
+        /// </summary>
+        public enum HydroStationTypes 
+        {
+            /// <summary>
+            /// 都市淹水感知站
+            /// </summary>
+            Uswg, 
+            /// <summary>
+            /// 河川水位站
+            /// </summary>
+            River, 
+            /// <summary>
+            /// 雨量站
+            /// </summary>
+            Precipitation, 
+            /// <summary>
+            /// 其他
+            /// </summary>
+            Other 
+        };
 
         /// <summary>
         /// 水資源物聯網監測站Id
@@ -87,6 +108,9 @@ namespace Hydrology.OpenDataApi.Model
         public Measurement[] Measurements { get; set; }
     }
 
+    /// <summary>
+    /// 河川監測站資訊
+    /// </summary>
     public class RiverStationInfo : HydroStationInfo
     { 
         /// <summary>
@@ -110,10 +134,13 @@ namespace Hydrology.OpenDataApi.Model
         public string BasinName { get; set; }
     }
 
+    /// <summary>
+    /// 都市淹水感知站資訊
+    /// </summary>
     public class UswgStationInfo : HydroStationInfo
     {
         /// <summary>
-        /// 淹水感知器資訊
+        /// 都市淹水感知器站資訊
         /// </summary>
         public UswgStationInfo()
         {
@@ -121,8 +148,14 @@ namespace Hydrology.OpenDataApi.Model
         }
     }
 
+    /// <summary>
+    /// 雨量站資訊
+    /// </summary>
     public class PrecipitationStationInfo : HydroStationInfo
     {
+        /// <summary>
+        /// 雨量站資訊
+        /// </summary>
         public PrecipitationStationInfo()
         {
             _stationType = HydroStationTypes.Precipitation;

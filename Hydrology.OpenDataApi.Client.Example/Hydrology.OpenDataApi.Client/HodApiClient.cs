@@ -13,6 +13,9 @@ using Hydrology.OpenDataApi.Model;
 
 namespace Hydrology.OpenDataApi.Client
 {
+    /// <summary>
+    /// 水利署水文資料開放Api 客戶端連接物件
+    /// </summary>
     public class HodApiClient
     {
         private HttpClient _httpClient = null;
@@ -22,7 +25,7 @@ namespace Hydrology.OpenDataApi.Client
         public enum RiverStationParameterTypes { countyName, townName, countyCode, townCode, basinName, basinCode }
 
         /// <summary>
-        /// 
+        /// 建構子
         /// </summary>
         /// <param name="baseAddress">水利署水文開放Api，伺服器地址</param>
         /// <param name="oauth2Client">水利署水文開放Api OAuth2 認證</param>
@@ -38,7 +41,7 @@ namespace Hydrology.OpenDataApi.Client
         /// <summary>
         /// 取得縣市代碼
         /// </summary>
-        /// <param name="countyInfos"></param>
+        /// <param name="countyInfos">回傳結果物件，若失敗為null</param>
         /// <returns></returns>
         public bool GetAdminDevisionsCountyInfo(out CountyInfo[] countyInfos)
         {
@@ -61,7 +64,7 @@ namespace Hydrology.OpenDataApi.Client
         /// <summary>
         /// 取得鄉鎮代碼
         /// </summary>
-        /// <param name="townInfos"></param>
+        /// <param name="townInfos">回傳結果物件，若失敗為null</param>
         /// <returns></returns>
         public bool GetAdminDevisionsTownInfo(out TownInfo[] townInfos)
         {
@@ -110,7 +113,7 @@ namespace Hydrology.OpenDataApi.Client
         /// <param name="latitude">搜尋中心緯度</param>
         /// <param name="longtitude">搜尋中心經度</param>
         /// <param name="radius">搜尋半徑</param>
-        /// <param name="uswgStationInfos">回傳結果</param>
+        /// <param name="uswgStationInfos">回傳結果物件，若失敗為null</param>
         /// <returns></returns>
         public bool GetUswgs(double latitude, double longtitude, double radius, out UswgStationInfo[] uswgStationInfos)
         {
@@ -133,7 +136,7 @@ namespace Hydrology.OpenDataApi.Client
         /// <summary>
         /// 取得河川代碼
         /// </summary>
-        /// <param name="basinInfos"></param>
+        /// <param name="basinInfos">回傳結果物件，若失敗為null</param>
         /// <returns></returns>
         public bool GetRiverBasinsInfo(out BasinInfo[] basinInfos)
         {
@@ -158,7 +161,7 @@ namespace Hydrology.OpenDataApi.Client
         /// </summary>
         /// <param name="riverStationParamterType">給定查詢參數種類</param>
         /// <param name="parameterValue">參數數值</param>
-        /// <param name="riverStationInfos">回傳結果</param>
+        /// <param name="riverStationInfos">回傳結果物件，若失敗為null</param>
         /// <returns></returns>
         public bool GetRiverStations(RiverStationParameterTypes riverStationParamterType, string parameterValue, out RiverStationInfo[] riverStationInfos)
         {
@@ -182,7 +185,7 @@ namespace Hydrology.OpenDataApi.Client
         /// <param name="latitude">搜尋中心緯度</param>
         /// <param name="longtitude">搜尋中心經度</param>
         /// <param name="radius">搜尋半徑</param>
-        /// <param name="riverStationInfos"></param>
+        /// <param name="riverStationInfos">回傳結果物件，若失敗為null</param>
         /// <returns></returns>
         public bool GetRiverStations(double latitude, double longtitude, double radius, out RiverStationInfo[] riverStationInfos)
         {

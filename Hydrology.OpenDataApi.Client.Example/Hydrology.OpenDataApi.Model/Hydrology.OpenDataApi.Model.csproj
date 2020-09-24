@@ -12,6 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ResponseJsonFileTypes.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Hydrology.OpenDataApi.Model.csproj.vspscc" />
   </ItemGroup>
 

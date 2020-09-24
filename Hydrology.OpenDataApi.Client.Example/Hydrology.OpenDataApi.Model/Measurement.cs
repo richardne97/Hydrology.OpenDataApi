@@ -13,6 +13,9 @@ namespace Hydrology.OpenDataApi.Model
     /// </summary>
     public class Measurement
     {
+        /// <summary>
+        /// IoW對應物理量 Id
+        /// </summary>
         public Guid IoWPhysicalQuantityId { get; set; }
 
         /// <summary>
